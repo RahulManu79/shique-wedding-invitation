@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect } from "react";
 import { motion, useAnimation, useInView } from "framer-motion";
 import {
   Heart,
@@ -8,10 +8,7 @@ import {
   ChevronDown,
   Instagram,
   MessageCircle,
-  Send,
   Camera,
-  CircleDot,
-  Sparkles,
 } from "lucide-react";
 
 // Animation variants
