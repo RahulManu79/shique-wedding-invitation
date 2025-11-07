@@ -6,8 +6,6 @@ import {
   MapPin,
   Clock,
   ChevronDown,
-  Instagram,
-  MessageCircle,
   Camera,
 } from "lucide-react";
 
