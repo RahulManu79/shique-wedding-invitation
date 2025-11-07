@@ -405,24 +405,7 @@ const FooterSection: React.FC = () => {
             Thank you for being part of our journey
           </p>
 
-          <div className="flex justify-center space-x-6">
-            <motion.a
-              href="#"
-              className="bg-wedding-brown hover:bg-wedding-brown-dark p-3 rounded-full transition-colors duration-200"
-              whileHover={{ scale: 1.1 }}
-              whileTap={{ scale: 0.9 }}
-            >
-              <Instagram className="w-6 h-6" />
-            </motion.a>
-            <motion.a
-              href="#"
-              className="bg-wedding-brown hover:bg-wedding-brown-dark p-3 rounded-full transition-colors duration-200"
-              whileHover={{ scale: 1.1 }}
-              whileTap={{ scale: 0.9 }}
-            >
-              <MessageCircle className="w-6 h-6" />
-            </motion.a>
-          </div>
+
         </div>
 
         <div className="border-t border-gray-700 pt-8">
