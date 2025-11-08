@@ -258,6 +258,49 @@ const EventDetailsSection: React.FC = () => {
     </section>
   );
 };
+const DressCodeSection: React.FC = () => {
+  return (
+    <section className="py-24 px-4 bg-gray-50">
+      <motion.div
+        className="max-w-3xl mx-auto text-center"
+        initial={{ opacity: 0, y: 60 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.9, ease: "easeOut" }}
+        viewport={{ once: true }}
+      >
+        {/* Static Rounded Card */}
+        <div
+          className="relative rounded-2xl shadow-[0_10px_30px_rgba(0,0,0,0.15)] p-8 px-10 py-14 overflow-hidden mx-auto"
+          style={{
+            backgroundColor: "#D6BFA3",
+            maxWidth: "700px",
+          }}
+        >
+          {/* Heading */}
+          <h2 className="font-serif text-4xl md:text-5xl font-semibold text-gray-800 mb-4">
+            Dress Code
+          </h2>
+          <div className="w-24 h-1 bg-white mx-auto mb-8 opacity-90 rounded-full"></div>
+
+          {/* Message */}
+          <p className="text-lg md:text-xl text-gray-800 leading-relaxed max-w-2xl mx-auto">
+            We invite our guests to dress in{" "}
+            <span className="font-semibold text-black">Black attire</span> for
+            the celebration.
+          </p>
+
+          {/* Subtext */}
+          <p className="text-lg md:text-xl text-gray-700 italic mt-6">
+            Still, your presence means the most.
+          </p>
+        </div>
+      </motion.div>
+    </section>
+  );
+};
+
+
+
 
 // Gallery Section
 const GallerySection: React.FC = () => {
@@ -313,83 +356,6 @@ const GallerySection: React.FC = () => {
   );
 };
 
-// RSVP Section
-// const RSVPSection: React.FC = () => {
-//   const [formData, setFormData] = useState({
-//     name: '',
-//     message: ''
-//   });
-
-//   const handleSubmit = (e: React.FormEvent) => {
-//     e.preventDefault();
-//     // Handle form submission here
-//     console.log('RSVP submitted:', formData);
-//     alert('Thank you for your RSVP! We can\'t wait to celebrate with you.');
-//     setFormData({ name: '', message: '' });
-//   };
-
-//   return (
-//     <section className="py-20 px-4 bg-wedding-brown-light">
-//       <div className="max-w-2xl mx-auto">
-//         <AnimatedSection>
-//           <div className="text-center mb-16">
-//             <h2 className="font-serif text-4xl md:text-5xl font-bold text-gray-800 mb-4">
-//               RSVP
-//             </h2>
-//             <div className="w-24 h-1 bg-wedding-brown mx-auto mb-6"></div>
-//             <p className="text-lg text-gray-600">
-//               We would love to have you celebrate with us on our special day!
-//             </p>
-//           </div>
-//         </AnimatedSection>
-
-//         <AnimatedSection>
-//           <form onSubmit={handleSubmit} className="bg-white rounded-2xl shadow-lg p-8 space-y-6">
-//             <div>
-//               <label htmlFor="name" className="block text-sm font-medium text-gray-700 mb-2">
-//                 Full Name *
-//               </label>
-//               <input
-//                 type="text"
-//                 id="name"
-//                 required
-//                 className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-wedding-brown focus:border-transparent transition-all duration-200"
-//                 placeholder="Enter your full name"
-//                 value={formData.name}
-//                 onChange={(e) => setFormData({ ...formData, name: e.target.value })}
-//               />
-//             </div>
-
-//             <div>
-//               <label htmlFor="message" className="block text-sm font-medium text-gray-700 mb-2">
-//                 Message for the Couple
-//               </label>
-//               <textarea
-//                 id="message"
-//                 rows={4}
-//                 className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-wedding-brown focus:border-transparent transition-all duration-200 resize-none"
-//                 placeholder="Share your wishes or a special message..."
-//                 value={formData.message}
-//                 onChange={(e) => setFormData({ ...formData, message: e.target.value })}
-//               />
-//             </div>
-
-//             <motion.button
-//               type="submit"
-//               className="w-full bg-wedding-brown text-white py-4 px-6 rounded-lg font-medium text-lg hover:bg-wedding-brown-dark transition-colors duration-200 flex items-center justify-center space-x-2"
-//               whileHover={{ scale: 1.02 }}
-//               whileTap={{ scale: 0.98 }}
-//             >
-//               <Send className="w-5 h-5" />
-//               <span>Send RSVP</span>
-//             </motion.button>
-//           </form>
-//         </AnimatedSection>
-//       </div>
-//     </section>
-//   );
-// };
-
 // Footer Section
 const FooterSection: React.FC = () => {
   return (
@@ -423,6 +389,7 @@ const WeddingPage: React.FC = () => {
       <HeroSection />
       <OurStorySection />
       <EventDetailsSection />
+      <DressCodeSection />
       <GallerySection />
       {/* <RSVPSection /> */}
       <FooterSection />
