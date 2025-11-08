@@ -80,7 +80,7 @@ const HeroSection: React.FC = () => {
           transition={{ duration: 1, delay: 0.5 }}
         >
           <h1 className="font-serif text-4xl md:text-8xl lg:text-9xl font-bold mb-4 tracking-wide">
-            Ashique <span className="text-wedding-brown-light">&</span> Aswathi
+            Ashiq <span className="text-wedding-brown-light">&</span> Aswathi
           </h1>
           <motion.p
             className="text-xl md:text-2xl font-light mb-8 tracking-widest"
@@ -299,9 +299,6 @@ const DressCodeSection: React.FC = () => {
   );
 };
 
-
-
-
 // Gallery Section
 const GallerySection: React.FC = () => {
   const images = [
@@ -363,18 +360,16 @@ const FooterSection: React.FC = () => {
       <div className="max-w-4xl mx-auto text-center">
         <div className="mb-8">
           <h3 className="font-serif text-3xl font-bold mb-4">
-            Ashique & Aswathi
+            Ashiq & Aswathi
           </h3>
           <p className="text-gray-300 mb-6">
             Thank you for being part of our journey
           </p>
-
-
         </div>
 
         <div className="border-t border-gray-700 pt-8">
           <p className="text-gray-400">
-            © 2025 Ashique & Aswathi. Made with ♥ for our special day.
+            © 2025 Ashiq & Aswathi. Made with ♥ for our special day.
           </p>
         </div>
       </div>
